@@ -7,17 +7,28 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  ["docker." + CUSTOM_DOMAIN]: dockerHub,
-  ["quay." + CUSTOM_DOMAIN]: "https://quay.io",
-  ["gcr." + CUSTOM_DOMAIN]: "https://gcr.io",
-  ["k8s-gcr." + CUSTOM_DOMAIN]: "https://k8s.gcr.io",
-  ["k8s." + CUSTOM_DOMAIN]: "https://registry.k8s.io",
-  ["ghcr." + CUSTOM_DOMAIN]: "https://ghcr.io",
-  ["cloudsmith." + CUSTOM_DOMAIN]: "https://docker.cloudsmith.io",
-  ["ecr." + CUSTOM_DOMAIN]: "https://public.ecr.aws",
-
+  ["registry-1.docker." + CUSTOM_DOMAIN]: dockerHub,
+  ["quay.docker." + CUSTOM_DOMAIN]: "https://quay.io",
+  ["gcr.docker." + CUSTOM_DOMAIN]: "https://gcr.io",
+  ["k8s-gcr.docker." + CUSTOM_DOMAIN]: "https://k8s.gcr.io",
+  ["k8s.docker." + CUSTOM_DOMAIN]: "https://registry.k8s.io",
+  ["ghcr.docker." + CUSTOM_DOMAIN]: "https://ghcr.io",
+  ["cloudsmith.docker." + CUSTOM_DOMAIN]: "https://docker.cloudsmith.io",
+  ["ecr.docker." + CUSTOM_DOMAIN]: "https://public.ecr.aws",
+  
   // staging
-  ["docker-staging." + CUSTOM_DOMAIN]: dockerHub,
+  ["docker-staging.docker." + CUSTOM_DOMAIN]: dockerHub,
+
+  // deno
+  ["deno." + CUSTOM_DOMAIN]: "https://deno.com",
+  ["jsr.deno." + CUSTOM_DOMAIN]: "https://jsr.io",
+  ["fresh.deno." + CUSTOM_DOMAIN]: "https://fresh.deno.dev",
+  
+  // docker
+  ["docker." + CUSTOM_DOMAIN]: "https://docker.com",
+  ["docs.docker." + CUSTOM_DOMAIN]: "https://docs.docker.com",
+  ["get.docker." + CUSTOM_DOMAIN]: "https://get.docker.com/",
+  ["download.docker." + CUSTOM_DOMAIN]: "https://download.docker.com/",
 };
 
 function routeByHosts(host) {
