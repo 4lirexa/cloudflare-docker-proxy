@@ -28,7 +28,7 @@ const routes = {
   ["docker." + CUSTOM_DOMAIN]: "https://docker.com",
   ["dockerdocs." + CUSTOM_DOMAIN]: "https://docs.docker.com",
   ["dockerget." + CUSTOM_DOMAIN]: "https://get.docker.com/",
-  ["dockerdownloa." + CUSTOM_DOMAIN]: "https://download.docker.com/",
+  ["dockerdownload." + CUSTOM_DOMAIN]: "https://download.docker.com/",
 };
 
 function routeByHosts(host) {
